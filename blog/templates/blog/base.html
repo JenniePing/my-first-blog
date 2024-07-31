@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html>
+    <head>
+        <title>Jennie's blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Concert+One&family=Jersey+15&family=Kalnia+Glaze:wght@100..700&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="header-content">
+                <div class="avatar">
+                    <img src="{% static 'blog/images/avatar.jpg' %}" alt="Avatar">
+                </div>
+                <h1><a href="/">Jennie's blog</a></h1>
+                <div class="icons">
+                    <a href="photos.html" class="top-menu"><span class="glyphicon glyphicon-camera"></span></a>
+                    <a href="books.html" class="top-menu"><span class="glyphicon glyphicon-book"></span></a>
+                    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="content container">
+                {% block content %}
+                {% endblock %}
+        </div>
+    </body>
+</html>

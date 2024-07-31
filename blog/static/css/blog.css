@@ -1,0 +1,156 @@
+
+.page-header {
+    /* background-color: #fff700; */
+    /* margin-top: 0;
+    padding: 20px 20px 20px 40px; */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px 20px;
+    margin-top: 0; /* 调整与页面上方的距离 */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #f175a7;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 设置元素之间的间距 */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; /* 图标与标题和头像之间的距离 */
+}
+
+.icons a {
+    color: #f175a7;
+    margin-left: 2px; /* 减小图标之间的间距 */
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+.icons a span {
+    display: inline-block;
+    vertical-align: middle; /* 让图标相对于文本居中 */
+    margin-top: 16px; /* 调整图标相对于链接的位置 */
+}
+
+/* .content {
+    margin-top: 0;
+} */
+
+h1, h2, h3, h4 {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #f175a7;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #f175a7;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中 */
+    padding: 10px;
+}
+
+.post {
+    /* margin-bottom: 70px; */
+    padding: 10px;
+    margin-left:0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 给框框加个边框阴影 */
+    width: 60%; /* 控制 post 的宽度 */
+    text-align: left; /* 左对齐 */
+}
+
+/* .post h1 a, .post h1 a:visited {
+    color: #000000;
+} */
+
+.post .date {
+    padding: 20px;
+    font-size: 12pt;
+    color: #888;
+    margin-bottom: 10px; /* 确保日期和标题之间有间距 */
+}
+
+.post h1 {
+    font-size: 18pt; /* 调整标题大小 */
+    text-align: left; /* 左对齐 */
+}
+
+.post h1, .post p {
+    padding: 0; /* 确保没有内边距 */
+    margin-left: 5px;
+}
+
+.post h1 a {
+    color: #348bfc;
+    text-decoration: none;
+}
+
+.post h1 a:hover {
+    text-decoration: underline;
+}
+
+.post p {
+    font-size: 14pt;
+    color: #333;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    font-size: 14pt;
+    color: #f175a7;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
